@@ -1,4 +1,4 @@
-(*My computer already had VS Code installed on it from a previous CS course, so the the steps to install it are not below)
+(*My computer already had VS Code installed on it from a previous CS course, so the the steps to install it are not detailed below)
 
 Welcome new CSE 15L students (and future Anvita :))! The blog post below will be detailing a series of steps that describe how to do the following: connect to a remote server and use various commands.
 
