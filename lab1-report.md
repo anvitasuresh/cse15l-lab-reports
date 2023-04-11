@@ -5,7 +5,7 @@ Welcome new CSE 15L students (and future Anvita :))! The blog post below will be
 ## Logging into your account and remotely connecting
 
 1. First, we will need to find your CSE 15L account. You can use this link [Link](https://sdacs.ucsd.edu/~icc/index.php) to search up your account.
-2. ![Image](lab-ss1.png)
+2. ![Image](lab1-ss1.png)
 The 9 character phrase beginning with "cs15lsp.." is your username; the last two characters will be different for every account. Click 'change your password for this account' and use this username. The site will ask you to confirm your email and then it will send a password reset page to your email. From this, you will be able to change your password.
 ![Image](Screen Shot 2023-04-10 at 11.19.38 AM.png)
 When this page shows up, your password has been sucessfully changed!
