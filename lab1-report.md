@@ -17,13 +17,13 @@ If you do not have VS code already, follow this link https://code.visualstudio.c
 ## Running Commands
 
 Now try running a few commands in the terminal. These commands should be run on the remote server (using ssh) and on your own computer. Some commands that you can run include 
-1. cd
-2. cd ~
-3. ls -a
-4. ls -lat
-5. ls /home/linux/ieng6/cs15lsp23/cs15lsp23abc (where abc is your username)
-6. cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
-7. cat /home/linux/ieng6/cs15lsp23/public/hello.txt
+1. `cd`
+2. `cd ~`
+3. `ls -a`
+4. `ls -lat`
+5. `ls /home/linux/ieng6/cs15lsp23/cs15lsp23abc` (where abc is your username)
+6. `cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/`
+7. `cat /home/linux/ieng6/cs15lsp23/public/hello.txt`
 
 To check if it is working properly, for the ls -a command, the output below should be printed.
 ![Image](lab1-ss4.png)
