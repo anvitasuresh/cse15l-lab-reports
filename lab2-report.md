@@ -1,5 +1,46 @@
 ## Part 1
+```
+import java.io.IOException;
+import java.net.URI;
+import java.util.ArrayList;
 
+class Handler implements URLHandler {
+    ArrayList<String> array = new ArrayList<>();
+
+
+    public String handleRequest(URI url) {
+        if (url.getPath().equals("/")) {
+            return concatString(array);
+        } 
+        else if (url.getPath().equals("/add-message")){
+            String[] parameters = url.getQuery().split("=");
+            array.add(parameters[1]);
+            return concatString(array);
+        }
+        return "404 Not Found!";
+    }
+
+    public String concatString(ArrayList<String> array){
+        String s = "";
+        for (int i=0; i<array.size(); i++){
+            s = s+array.get(i)+"\n";
+        }
+        return s;
+    }
+}
+
+public class StringServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing string");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+        Server.start(port,new Handler());
+    }
+}
+```
 
 ## Part 2
 For the reverse in place method in ArrayExamples.java, a failure inducing input is shown in the JUnit test below. This test shows that the method is not reversing the list as it is supposed to be.
