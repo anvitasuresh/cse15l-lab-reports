@@ -41,8 +41,8 @@ public class StringServer {
     }
 }
 ```
-![Image](lab2-ss3.)
-![Image](lab2-ss4)
+![Image](lab2-ss3..png)
+![Image](lab2-ss4.png)
 The methods that were called in this code for this are concatString, the main method, and handleRequest. The values/arguments that were called into these methods are the url which is of type URI and the array list of the string that is being concatenated. The values change for the second request because after the "Hello", the "How are you" has to be concatenated to the previous string. The port values will also vary based on the request.
 
 ## Part 2
@@ -67,11 +67,11 @@ An input that does not produce a failure can be seen as below. Since there is on
   }
  ```
 Symptom from TEST #1:
-![Image](lab2-ss1)
+![Image](lab2-ss1.png)
 The symptom that is being produced here is due to the fact that the list is not being reversed. Index 2 should be 5 (reversing the list should give you {7,6,5}) but instead, it is 7.
 
 Symptom from TEST #2:
-![Image](lab2-ss2)
+![Image](lab2-ss2.png)
 No error output is being produced here because there is only one element in the list (one element being reversed is just that element itself).
 
 One bug in the code was that it should not run through the whole array but only half because it is swapping the left and right side. The other bug was that there has to be a temporary integer variable that works to swap both sides of the array; it does this by storing each value of the array in the variable temp and then swapping them.
