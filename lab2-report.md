@@ -42,7 +42,7 @@ public class StringServer {
 }
 ```
 ![Image](lab2-ss3.)
-![Image](lab-ss4)
+![Image](lab2-ss4)
 The methods that were called in this code for this are concatString, the main method, and handleRequest. The values/arguments that were called into these methods are the url which is of type URI and the array list of the string that is being concatenated. The values change for the second request because after the "Hello", the "How are you" has to be concatenated to the previous string. The port values will also vary based on the request.
 
 ## Part 2
