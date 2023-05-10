@@ -1,8 +1,12 @@
 # Using `grep` in the command line
 
 Grep is a command line argument that is used to search through files for a specific pattern. It will display any lines in the file that match the pattern given in the command line. The basic usage for grep is as follows: `grep (argument 1) (argument 2)`. In this case, (argument 1) is the patter that you are looking for and (argument 2) is the file that you want to search in. Additionally, there are many options that can be used to modify the behavior of grep in the command line. 
-1. One option is -r which recursively searches for the pattern in all of the files and subdirectories. This will come in handy when you need to find a string that repeats multiple times in a directory.
-2. Another option is `grep -v` which inverts the search and shows the lines that do not match the pattern. 
+
+## Option 1: `grep -r`
+One option is -r which recursively searches for the pattern in all of the files and subdirectories. This will come in handy when you need to find a string that repeats multiple times in a directory.
+
+## Option 2: `grep -v`
+Another option is `grep -v` which inverts the search and shows the lines that do not match the pattern. 
 One example of using this command with the string search data is as shown below. This grep command using -v will show all of the lines in the file chapter-1.txt that do not contain the string 'the'. This is useful in any scenario where you want to find lines that do not contain a certain string, since this might be easier than searching for the string itself: 
 `grep -v "the" chapter-1.txt`
 
@@ -55,5 +59,9 @@ The Agencies Confer
     Vice President: Yes, it has.
     SecDef: We can't confirm that. We're told that one aircraft is down but we do not have a pilot report that did it.
 What If?`
-4. Another is -e which can be used to search for multiple patterns in one search at the command line.
-5. Another is -C which shows the lines before and after the line where the pattern matches.
+
+## Option 3: `grep -e`
+Another option is -e which can be used to search for multiple patterns in one search at the command line.
+
+## Option 4: `grep -C`
+Another option is -C which shows the lines before and after the line where the pattern matches.
