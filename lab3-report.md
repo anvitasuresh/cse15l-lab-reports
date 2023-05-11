@@ -5,8 +5,10 @@ Grep is a command line argument that is used to search through files for a speci
 ## Option 1: `grep -i`
 One option is -i which searches for lines that matches the pattern given regardless of whether it is uppercase or lowercase. 
 An example of using this command with string search data is shown below. Using grep -i will show all of the lines in the file jounal.pbio.0020001.txt that have the word science in it even if it is upper/lowercase. This is useful because it helps to find any string regardless of case.
-`grep -i "science" journal.pbio.0020001.txt`
-` the clear inequalities in science between developing and developed countries and to the
+
+command: `grep -i "science" journal.pbio.0020001.txt`
+
+output: ` the clear inequalities in science between developing and developed countries and to the
         importance of reducing the inequalities in science between developed and developing
         88% of all scientific and technical publications registered by the Science Citation Index
         It is rather obvious that richer countries are able to invest more resources in science
@@ -82,9 +84,10 @@ are regular diversity conferences for state justice community`
 ## Option 2: `grep -v`
 Another option is `grep -v` which inverts the search and shows the lines that do not match the pattern. 
 One example of using this command with the string search data is as shown below. This grep command using -v will show all of the lines in the file chapter-1.txt (which is in the 911report directory) that do not contain the string 'the'. This is useful in any scenario where you want to find lines that do not contain a certain string, since this might be easier than searching for the string itself: 
-`grep -v "the" chapter-1.txt`
 
-`"WE HAVE SOME PLANES"
+command: `grep -v "the" chapter-1.txt`
+
+output: `"WE HAVE SOME PLANES"
 INSIDE THE FOUR FLIGHTS
     Boston: American 11 and United 175. Atta and Omari boarded a 6:00 A.M. flight from Portland to Boston's Logan International Airport.
     Between 6:45 and 7:40, Atta and Omari, along with Satam al Suqami, Wail al Shehri, and Waleed al Shehri, checked in and boarded American Airlines Flight 11, bound for Los Angeles. The flight was scheduled to depart at 7:45.
@@ -156,11 +159,91 @@ Another example is as follows. This command will search the file 1468-6708-3-1.t
         Competing interests
         CESD Center for Epidemiologic Studies Depression
         poor?`
-## Option 3: `grep -e`
-Another option is -e which can be used to search for multiple patterns in one search at the command line. This command can be very helpful when you want to narrow down your search in the files more than just down to one pattern. 
-An example of using this is shown below. In this case, I am searching the file DraftRecom-PDF.txt for two different strings ("recommendation" and "address"). It is much easier and more efficient to do this than searching for the patterns separately.
-`grep -e "recommendations" -e "address" DraftRecom-PDF.txt`
-`
 
-## Option 4: `grep -C`
-Another option is -C which shows the lines before and after the line where the pattern matches.
+## Option 3: `grep -e`
+Another option is -e which can be used to search for multiple patterns in one search at the command line. This command can be very helpful when you want to narrow down your search in the files more than just down to one pattern. `grep` will print out the lines if it finds matches for any of the patterns provided.
+An example of using this is shown below. In this case, I am searching the file DraftRecom-PDF.txt for two different strings ("recommendation" and "address"). It is much easier and more efficient to do this than searching for the patterns separately.
+
+command: `grep -e "recommendations" -e "address" DraftRecom-PDF.txt`
+
+output: `recommendations from conference deliberations. Before the
+conference, he and Daniel Pollock drafted recommendations for the
+committee modified those recommendations, and they were distributed
+achieve unanimity regarding the recommendations, but to have
+be to discuss the recommendations one by one, identifying any gaps
+sequence of the recommendations did not imply a priority order.
+Because the published recommendations will include supporting text,
+address the full spectrum of alcohol problems among ED
+Gordon Smith suggested that the recommendations should address
+recommendations.
+to patients. Perhaps the recommendations should address alcohol
+suggested that the recommendation be clear that it is addressing
+Edward Bernstein pointed out that the recommendations would
+research recommendations with a recommendation that included
+in the supporting text, she suggested addressing the different
+Daniel Pollock added that the message of the recommendations
+clinicians understand the recommendations better. If we do not, a
+Catherine Gordon proposed that the recommendations address the
+Brown praised the recommendation for addressing a very important
+addresses. He noted that alcohol screening in the ED is currently
+recommendations to the high-risk environment in which these people
+explicit somewhere in the recommendations.
+"Research in this category may address a broad range of
+Ries thought that the recommendations should encourage studying
+Pat Lenaghan suggested that clinicians need recommendations
+General comments about the recommendations
+proposed recommendations, Hungerford asked if they had general
+comments about the recommendations overall.`
+
+Another example is shown below for this command. In this example, I am searching for the words drinking and anxiety in the file Session2-PDF.txt. 
+
+command: `grep -e "drinking" -e "anxiety" Session2-PDF.txt`
+
+output: `disease develops. WHO defines hazardous drinking as 4 or more
+drinking as consumption of more than 14 drinks/week or more than 4
+drinks/occasion is considered at risk. Binge drinking alone is also
+identifying patients with binge drinking, we can define binge
+drinking as 3, 4, 5, or 6 drinks on an occasion. Screening tests
+other drug use, depression, and anxiety disorders. Many of the
+spontaneously volunteer information about drinking. Cherpitel
+reported that patient self-report of drinking prior to arrival had
+setting-"Have you ever had a drinking problem?"-had a high
+at-risk drinking in addition to alcohol abuse and dependence. AUDIT
+at-risk drinking, alcohol abuse, and dependence. It is a
+those screens, which covered feeling guilty after drinking,
+blackouts, failing to do what is normally expected after drinking,
+and morning drinking. However, this new instrument has not been
+drinking, or abuse.5,36
+primary care setting. For at-risk, hazardous, or harmful drinking,
+self-reported drinking.7 In another ED study, a saliva alcohol
+drinkers: lack of sensitivity of the two-question drinking test. Am
+drinking: does a single question work? J Fam Pract
+pregnancy risk-drinking. Alcohol Clin Exp Res 1994;18:1156-61.
+prenatal detection of risk-drinking. Am J Obstet Gynecol
+drinking in the emergency room: the RAPS4. Rapid Alcohol Problems
+instruments for problem drinking among blacks, whites and Hispanics
+screening instruments for identifying harmful drinking and alcohol
+hazardous/harmful drinking among subcritically injured patients.
+A. Screening for excessive alcohol drinking: comparative value of
+Screening for problem drinking in college freshmen. J Am Coll
+drinking in college students. J Am Coll Health 1991;39:227-31.
+drinking among college freshman. J Adolesc Health
+screening measure for problem drinking among female college
+60. Dawson D, Archer L. Relative frequency of heavy drinking`
+
+## Option 4: `grep -c`
+Another option is -c which returns the number of lines that match the pattern provided in the command line. It does not display the lines itself, but rather a single integer. This command is useful when you do not want the actual lines themselves but just want to know how many times a certain pattern is present in a file.
+One example is as shown below. Here, I am looking for how many lines in the file 1468-6708-3-4.txt for how many lines contain the word "death" and it returned 10. 
+
+command: `grep -c "death" 1468-6708-3-4.txt`
+
+output: `10`
+
+Another example is shown below. In this case, I want to see how many lines in the file 1471-213X-1-10.txt contain the word "gene". 
+
+command: `grep -c "gene" 1471-213X-1-10.txt`
+
+output: `99`
+
+## Sources
+I found out about the options of the grep command in two ways. One was through this website [Link](https://man7.org/linux/man-pages/man1/grep.1.html). The other way was by asking ChatGPT!
