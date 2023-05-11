@@ -31,8 +31,10 @@ output: ` the clear inequalities in science between developing and developed cou
         to the sciences will be an excellent investment by developing nations in terms of`
         
 Here is another example. In this one, I am searching for the word "diversity" in the file diversity_priorities.txt. This is helpful because I want to see where it mentions diversity, not caring about whether it is uppercase or not.
-`grep -i "diversity" diversity_priorities.txt`
-`national conference on diversity in the legal services community.
+
+command: `grep -i "diversity" diversity_priorities.txt`
+
+output: `national conference on diversity in the legal services community.
 Focusing on broad aspects of diversity - including, among others,
 national origin - participants examined diversity-related strengths
 the context of a series of dialogues on diversity that NLADA and
