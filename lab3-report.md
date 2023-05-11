@@ -139,8 +139,11 @@ The Agencies Confer
     SecDef: We can't confirm that. We're told that one aircraft is down but we do not have a pilot report that did it.
 What If?`
 
-Another example is as follows. This command will search the file 1468-6708-3-1.txt which is in the biomed directory and find all of the lines that do not contain the letter a: `grep -v "a" 1468-6708-3-1.txt`
+Another example is as follows. This command will search the file 1468-6708-3-1.txt which is in the biomed directory and find all of the lines that do not contain the letter a: 
 
+command: `grep -v "a" 1468-6708-3-1.txt`
+
+output: 
 `Introduction
         elderly [ 9 ] .
           Study
