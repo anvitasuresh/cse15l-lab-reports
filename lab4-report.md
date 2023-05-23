@@ -25,7 +25,8 @@ Your screen should look like the image below.
 
 Click <ESC> to make sure you are in normal mode. To edit the code now, follow the commands below. These commands first find all of the instances of index1 and then finds the last one. Then, they change index1 to index2 and saves the file.
 Keys Pressed: `</> <i> <n> <d> <e> <x> <1> <ENTER> <N> <e> <x> <i> <2> <ESC> <SHIFT>(hold) <;> <w> <q> <ENTER>`
-Before you click the last enter, your screen should look like the image below.
+
+  Before you click the last enter, your screen should look like the image below.
 
 ![Image](lab4-ss5.png)
 
