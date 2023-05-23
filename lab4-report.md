@@ -1,6 +1,6 @@
 # Editing from the Command Line with Vim
 
-Welcome back! For today's tutorial, we will be going over how to make edits through the command line using Vim.
+Welcome back! For today's tutorial, we will be going over how to make edits to files through the command line using Vim.
 
 ## Step 1: Log into ieng6
 First, log into your CSE 15L student account. To do this type in `ssh cs15lsp23zz@ieng6.ucsd.edu` into the command line where zz is replaced by your personal account digits.
