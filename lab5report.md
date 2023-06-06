@@ -1,5 +1,5 @@
 # Debugging
-Today, we will be designing a debugging scenario by simulating a conversation that a student has with their TA regarding a problem with their code. 
+Today, we will be designing a debugging scenario by simulating a conversation that a student has with their TA regarding a problem with their code. The bug in this scenario is very common (it has happened to me many times!) so hopefully it helps anyone reading this :)
 
 ## Part 1 – Debugging Scenario
 
