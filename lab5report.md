@@ -23,9 +23,11 @@ Here are closer images of the bash script and output for better viewing :)
 The student used the response from the TA and realized where their error occurs. After checking their current directory and seeing that it was actually grading-area, they saw that lib was not inside of this directory. Since lib stores the JUnit and hamcrest files, there will be an error in the terminal when running the bash script that the package does not exist. To fix this error, the student added `cp -r ../lib .` to line 21 in grade.sh which moves lib into grading-area and allows for the bash script to run and compile without error. 
 
 Before fixing the bash script: 
+
 ![Image](lab5-ss3.png)
 
 After fixing the bash script:
+
 ![Image](lab5-ss4.png)
 
 Here is the correct output and the edit to the bash script that the student made given the TA's feedback:
