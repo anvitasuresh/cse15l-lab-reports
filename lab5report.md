@@ -41,6 +41,7 @@ Here we can see the files that were inside of list-examples-grader-main and lib.
 ## Part 2 – Reflection
 One thing that I found very interesting from the second half of this quarter was the concept of Vim. This application quite interesting because it allowed you to edit the file from the terminal and you didn't even have to be in the file to edit it! I did not realize how useful this is with the idea of remote servers and it makes sense why this application is widely used in software engineering. It is much more effient to use than editing the file directly and I am looking forward to exploring more with this tool as I move into higer level classes :)
 
+Thanks for a great quarter!
 
 
 
